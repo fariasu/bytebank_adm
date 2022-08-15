@@ -1,15 +1,15 @@
-﻿using bytebank_adm.Funcionarios;
+﻿using bytebank_adm.SistemaInterno;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace bytebank_adm.SistemaInterno
+namespace bytebank_adm.Funcionarios
 {
-    public abstract class Autenticavel : Funcionario
+    public abstract class FuncionarioAutenticavel : Funcionario, IAutenticavel
     {
-        public Autenticavel(string cpf, double salario) : base(cpf, salario)
+        protected FuncionarioAutenticavel(string cpf, double salario) : base(cpf, salario)
         {
         }
 

@@ -9,7 +9,7 @@ namespace bytebank_adm.SistemaInterno
 {
     public class SistemaInterno
     {
-        public bool Logar(Autenticavel autenticavel, string senha, string login)
+        public bool Logar(IAutenticavel autenticavel, string senha, string login)
         {
             bool usuarioAutenticado = autenticavel.Autenticar(senha, login);
             if (usuarioAutenticado)
